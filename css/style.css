@@ -25,7 +25,6 @@ body {
 
 .profile-content {
     width: 400px;
-    height: 320px;
     background: #111;
     border-radius: 14px;
     display: flex;
@@ -93,6 +92,7 @@ body {
 }
 
 .account-links {
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
