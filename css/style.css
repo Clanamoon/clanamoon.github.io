@@ -33,6 +33,24 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, .35);
+    border:#fff 2px solid;
+    border-radius: 24px;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        box-shadow: 0 0 4px #fff,
+        inset 0 0 4px #fff,
+        0 0 12px #9146ff,
+        inset 0 0 12px #9146ff,
+        0 0 24px #9146ff,
+        inset 0 0 24px #9146ff;
+    }
+
+    20%, 24%, 55% {
+        box-shadow: none;
+    }
 }
 
 .avatar-content {
@@ -82,9 +100,10 @@ body {
 
 .bio-content .title p {
     padding: 20px;
-    color: #bdbdbd;
+    color: #00adee;
     font-size: 14px;
     font-weight: 400;
+    text-shadow: 0 0 20pt #00adee;
 }
 
 .bio-content .title .seperator {
@@ -105,35 +124,13 @@ body {
 svg {
     margin: 8px;
     user-select: none;
-}
-
-svg.fa-steam {
-    color: #00adee;
-    filter: drop-shadow(0 0 20pt rgba(0, 173, 238, 1));
-    transition: 1s;
-}
-
-svg.fa-spotify {
-    color: #1db954;
-    filter: drop-shadow(0 0 20pt rgba(29, 185, 84, 1));
-    transition: 1s;
-}
-
-svg.fa-twitch {
-    color: #9146ff;
-    filter: drop-shadow(0 0 20pt rgba(145, 70, 255, 1));
-    transition: 1s;
-}
-
-svg.fa-discord {
-    color: #7289da;
-    filter: drop-shadow(0 0 20pt rgba(114, 137, 218, 1));
+    color: #fff;
     transition: 1s;
 }
 
 svg:hover {
     cursor: pointer;
-    color: #fff;
-    filter: drop-shadow(0 0 20pt rgba(255, 255, 255, 1));
+    color: var(--color);
+    filter: drop-shadow(0 0 20pt var(--color));
     transition: .3s;
 }
