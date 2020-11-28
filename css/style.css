@@ -68,16 +68,17 @@ body {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
+    text-shadow: 0 0 30pt #fff;
 }
 
 .bio-content .title h2 {
     color: #e0e0e0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .bio-content .title p {
-    margin-top: 4px;
+    padding: 20px;
     color: #bdbdbd;
     font-size: 14px;
     font-weight: 400;
