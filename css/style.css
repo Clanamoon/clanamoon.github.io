@@ -104,6 +104,7 @@ body {
 
 svg {
     margin: 8px;
+    user-select: none;
 }
 
 svg.fa-steam {
