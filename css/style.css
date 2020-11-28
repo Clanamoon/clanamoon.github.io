@@ -25,7 +25,7 @@ body {
 
 .profile-content {
     width: 400px;
-    height: 300px;
+    height: 320px;
     background: #111;
     border-radius: 14px;
     display: flex;
@@ -72,7 +72,7 @@ body {
 }
 
 .bio-content .title h2 {
-    color: #bdbdbd;
+    color: #e0e0e0;
     font-size: 16px;
     font-weight: 500;
 }
